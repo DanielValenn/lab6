@@ -13,12 +13,15 @@ public class Calculator {
         return x;
     }
 
-    public void ADUNARE(double a) {
+    public Calculator ADUNARE(double a) {
         x += a;
+        return this;
+
     }
 
-    public void SCADERE(double a) {
+    public Calculator SCADERE(double a) {
         x -= a;
+        return this;
     }
 
     public void INMULTIRE(double a) {
@@ -34,6 +37,14 @@ public class Calculator {
 
     public void getREZULTAT() {
         System.out.println(x);
+    }
+
+    public void RADICAL() {
+        x = Math.sqrt(x);
+    }
+
+    public void EXPONENT(int a) {
+        x = Math.pow(x, a);
     }
 
 }
