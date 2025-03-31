@@ -1,5 +1,5 @@
 public class Calculator {
-    double x;
+    protected double x;
 
     public Calculator(double x) {
         this.x = x;
@@ -35,4 +35,5 @@ public class Calculator {
     public void getREZULTAT() {
         System.out.println(x);
     }
+
 }
